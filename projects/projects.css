@@ -6,6 +6,7 @@
 }
 
 body {
+    height: 100%;
     background-image: radial-gradient(#232c39, #202733);
     font-family: "Titillium Web", monospace;
     color: #fff;
