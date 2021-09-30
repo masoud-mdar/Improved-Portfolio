@@ -1,3 +1,4 @@
+// Making a Planet
 function planetMaker () {
     let cible = document.createElement("div");
     cible.classList.add("cible");
@@ -17,11 +18,10 @@ function planetMaker () {
 
     cible.appendChild(a)
 
-    //ufoWrapper.appendChild(cible);
-
     return cible
 }
 
+// Making a Satellite
 function satelliteMaker () {
     let sat = document.createElement("div");
     sat.classList.add("satellite");
@@ -54,8 +54,6 @@ function satelliteMaker () {
 
     body.appendChild(satLeft);
 
-
-
     let satMiddle = document.createElement("div");
     satMiddle.classList.add("sat-middle");
 
@@ -65,8 +63,6 @@ function satelliteMaker () {
     satMiddle.appendChild(satLabel);
 
     body.appendChild(satMiddle);
-
-
 
     let satRight = document.createElement("div");
     satRight.classList.add("sat-right");
@@ -85,8 +81,6 @@ function satelliteMaker () {
     }
 
     satRight.appendChild(rightBat);
-
-
 
     body.appendChild(satRight);
 
@@ -129,7 +123,5 @@ function satelliteMaker () {
 
     sat.appendChild(satTail);
 
-    //ufoWrapper.appendChild(sat)
     return sat
-
 }

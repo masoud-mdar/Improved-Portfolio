@@ -34,8 +34,6 @@ function cibleHandler() {
     requestAnimationFrame(creator);
 }
 
-
-
 function cibleMoveToLeft() {
 
     function mover (timeStamp) {
@@ -63,16 +61,11 @@ function cibleMoveToLeft() {
                                 bullet.style.display = "none";
                             }
 
-                            //item.style.display = "none";
-                            
-
-
-
-                            /*if (score) {
-                                score --;
-                                scoreProgress = score * 7;
+                            if (score < 30) {
+                                score ++;
+                                scoreProgress = score * 5;
                                 scoreSpan.style.width = `${scoreProgress}px`;
-                            }*/
+                            }
 
                         }
                     }
@@ -95,4 +88,79 @@ function cibleMoveToLeft() {
         }, 100)
     }
     requestAnimationFrame(mover)
+}
+
+
+/******************** Bullet functions *****************/
+
+function lastBulletKiller () {
+    let lastBullet = ufoWrapper.lastChild;
+    if (lastBullet) {
+        ufoWrapper.removeChild(lastBullet);
+    }
+}
+
+function bulletMaker () {
+    const bullet = document.createElement("div");
+    bullet.classList.add("bullet");
+    bullet.id = "bullet";
+
+    bulletLeftSpace = 0;
+    bulletUpSpace = ufoUpSpace + 11;
+    bullet.style.top = `${bulletUpSpace}%`;
+    bullet.style.left = `${bulletLeftSpace}%`;
+
+    ufoWrapper.appendChild(bullet);
+    return bullet
+}
+
+function bulletMoveToRight (bullet) {
+    bulletLeftSpace += 5;
+    bullet.style.left = `${bulletLeftSpace}%`;
+}
+
+function collisionDetector (bulletXPosition) {
+    let isCollision = false;
+    let collisionIndex = 0;
+
+    ciblesArr.forEach((cible, index) => {
+        let cibleXPosition = cible.getBoundingClientRect()["x"];
+
+        if (bulletXPosition <= (cibleXPosition + 12) && bulletXPosition >= (cibleXPosition - 12)) {
+            isCollision = true;
+            collisionIndex = index;
+        }
+    })
+
+    return [isCollision, collisionIndex]
+}
+
+function spaceButtonHandler () {
+    clearInterval(leftTimerId);
+
+    if (seconds > 0 && gameMode) {
+        // To kill the other bullet not to have more than one bullet at a time
+        lastBulletKiller();
+    
+        // Creating the bullet
+        const bullet = bulletMaker();
+    
+        // Moving the bullet right (smoothly)
+        leftTimerId = setInterval(() => {
+            if (bulletLeftSpace <  3000) {
+    
+                bulletMoveToRight(bullet);
+
+            } else {
+                bullet.style.display = "none";
+                clearInterval(leftTimerId);
+            }
+        }, 2)
+
+    } else {
+        let bullet = document.getElementById("bullet");
+        if (bullet) {
+            bullet.style.display = "none";
+        }
+    }
 }
