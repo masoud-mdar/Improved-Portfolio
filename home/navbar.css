@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 .navbar {
     width: 100vw;
     height: 7vh;
@@ -26,6 +27,7 @@
     align-items: center;
     border-bottom: 4px solid transparent;
     font-size: 18px;
+    font-family: "Titillium Web", monospace;
     color: #d4e4d2;
     transition: border-bottom-color 300ms ease;
 }

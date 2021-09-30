@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
 
 body {
     background-image: radial-gradient(#232c39, #202733);
+    font-family: "Titillium Web", monospace;
     color: #fff;
 }
 
