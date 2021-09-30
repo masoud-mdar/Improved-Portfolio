@@ -10,6 +10,7 @@ const gameField = document.getElementById("game-field");
 const scoreBoard = document.getElementById("score-board");
 const timeDiv = document.getElementById("timer");
 const scoreSpan = document.getElementById("score");
+const projectsWrapper = document.getElementById("projects-wrapper");
 
 let starTimerId;
 let starAnimationId;

@@ -73,6 +73,7 @@ function normalModeStyleMaker() {
 
     gameField.style.display = "none";
     scoreBoard.style.display = "none";
+    projectsWrapper.style.display = "flex";
 }
 
 
@@ -101,6 +102,7 @@ function gameModeStyleMaker() {
 
     gameField.style.display = "block";
     scoreBoard.style.display = "flex";
+    projectsWrapper.style.display = "none";
 }
 
 function gameStarter() {

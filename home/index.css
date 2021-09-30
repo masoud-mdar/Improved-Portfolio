@@ -263,7 +263,7 @@ button:focus {
     justify-content: flex-end;
     align-items: center;
     background-color: #44ceab;
-
+    box-shadow: 1px 1px 7px #44ceab;
     border-radius: 50% 50% 0 0;
     border-bottom: none;
 }

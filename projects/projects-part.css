@@ -1,0 +1,910 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+
+
+@media only screen and (min-width: 649px) {
+    #projects {
+        width: 100vw;
+        height: 235vh;
+        padding-top: 25px;
+        padding-bottom: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-content:space-around;
+        z-index: 2;
+    }
+
+    .project {
+        width: 40vw;
+        height: 50vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(1)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/issue-tracker.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(1):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(2)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/personal-library.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(2):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(3)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/sudoku-solver.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(3):hover::after {
+        opacity: 0.1;
+    }
+    
+    
+    .project:nth-child(4)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/exercise-tracker.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(4):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(5)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/meme-generator.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(5):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(6)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/wikipedia.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(6):hover::after {
+        opacity: 0.1;
+    }
+
+    .project:nth-child(7)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/weather.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(7):hover::after {
+        opacity: 0.1;
+    }
+
+    .project:nth-child(8)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/converter.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(8):hover::after {
+        opacity: 0.1;
+    }
+    
+    
+    .project:nth-child(9)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/request-header-parser.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(9):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(10)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/url-hasher.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(10):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(11)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/file-metadata.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(11):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(12)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/timestamp.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(12):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(13)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/random-quote.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(13):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(14)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/markdown-previewer.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(14):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(15)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/virtual-drum-machine.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(15):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(16)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/25-5-clock.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(16):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(17)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/calculator.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(17):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(18)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/random-color.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(18):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(19)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        border-radius: 15px;
+        background-image: url("../public/key-code.jpg");
+        background-size: cover;
+        box-shadow: 5px 5px 30px #0fc4e4;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(19):hover::after {
+        opacity: 0.1;
+    }
+    
+    
+    
+    .project .project-details {
+        width: 30vw;
+        height: 40vh;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 0;
+        transition: 1000ms;
+        z-index: 2;
+    }
+    
+    .project:hover .project-details {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .project-details .project-title h2 {
+        color: #d4e4d2;
+        font-family: "Bungee Hairline", cursive;
+        opacity: 0;
+        transition: 1500ms;
+    }
+    
+    .project:hover .project-details .project-title h2 {
+        opacity: 1;
+    }
+    
+    .project-link {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+    }
+    
+    .project-link::after {
+        display:block;
+        content: '';
+        border-bottom: solid 2px #44ceab;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+    }
+    
+    .project-link:hover::after {
+        transform: scaleX(1);
+    }
+    
+    .project-details .project-skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-content: space-around;
+        color: #d4e4d2;
+        font-family: monospace;
+    }
+    
+    .project-details .project-skills p {
+        padding: 6px;
+        margin: 5px;
+        border: 2px solid #d4e4d2;
+        border-radius: 5px;
+        opacity: 0;
+        transition: 1500ms;
+    }
+    
+    .project:hover .project-details .project-skills p {
+        opacity: 1;
+    }
+    
+    .project-code {
+        width: 30vw;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+    }
+    
+    .project-code a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #d4e4d2;
+        font-family: monospace;
+        font-size: 16px;
+    }
+    
+    
+    .project-code a::after {
+        display:block;
+        content: '';
+        border-bottom: solid 2px #44ceab;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+    }
+    
+    .project-code a:hover::after {
+        transform: scaleX(1);
+    }
+    .more-projects {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 7%;
+        z-index: 2;
+    }
+    
+    .more-projects .more-p-link {
+        color: #0fc4e4;
+        font-family: monospace;
+        font-size: 24px;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 648px) {
+
+    #projects {
+        width: 100vw;
+        height: 235vh;
+        padding-top: 25px;
+        padding-bottom: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-content:space-around;
+        z-index: 2;
+    }
+
+    .project {
+        width: 45vw;
+        height: 50vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(1)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/issue-tracker.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(1):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(2)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/personal-library.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(2):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(3)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/sudoku-solver.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(3):hover::after {
+        opacity: 0.1;
+    }
+    
+    
+    .project:nth-child(4)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/exercise-tracker.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(4):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(5)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/meme-generator.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(5):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(6)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/wikipedia.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(6):hover::after {
+        opacity: 0.1;
+    }
+
+    .project:nth-child(7)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/weather.jpg");
+        background-size: cover;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(7):hover::after {
+        opacity: 0.1;
+    }
+
+    .project:nth-child(8)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/converter.jpg");
+        background-size: cover;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(8):hover::after {
+        opacity: 0.1;
+    }
+    
+    
+    .project:nth-child(9)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/request-header-parser.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(9):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(10)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/url-hasher.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(10):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(11)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/file-metadata.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(11):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(12)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/timestamp.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(12):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(13)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/random-quote.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(13):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(14)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/markdown-previewer.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(14):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(15)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/virtual-drum-machine.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(15):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(16)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/25-5-clock.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(16):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(17)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/calculator.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(17):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(18)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/random-color.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(18):hover::after {
+        opacity: 0.1;
+    }
+    
+    .project:nth-child(19)::after {
+        content: "";
+        width: 40vw;
+        height: 40vh;
+        position: absolute;
+        top: 0;
+        background-image: url("../public/key-code.jpg");
+        background-size: 100% 100%;
+        transition: 500ms;
+    }
+    
+    .project:nth-child(19):hover::after {
+        opacity: 0.1;
+    }
+    
+    
+    
+    .project .project-details {
+        width: 30vw;
+        height: 40vh;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 0;
+        transition: 1000ms;
+        z-index: 2;
+    }
+    
+    .project:hover .project-details {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .project-details .project-title h2 {
+        color: #d4e4d2;
+        font-family: "Bungee Hairline", cursive;
+        opacity: 0;
+        transition: 1500ms;
+    }
+    
+    .project:hover .project-details .project-title h2 {
+        opacity: 1;
+    }
+    
+    .project-link {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+    }
+    
+    .project-link::after {
+        display:block;
+        content: '';
+        border-bottom: solid 2px #44ceab;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+    }
+    
+    .project-link:hover::after {
+        transform: scaleX(1);
+    }
+    
+    .project-details .project-skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-content: space-around;
+        color: #d4e4d2;
+        font-family: monospace;
+    }
+    
+    .project-details .project-skills p {
+        padding: 6px;
+        margin: 5px;
+        border: 2px solid #d4e4d2;
+        border-radius: 5px;
+        opacity: 0;
+        transition: 1500ms;
+    }
+    
+    .project:hover .project-details .project-skills p {
+        opacity: 1;
+    }
+    
+    .project-code {
+        width: 45vw;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+    }
+    
+    .project-code a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #d4e4d2;
+        font-family: monospace;
+        font-size: 12px;
+    }
+    
+    
+    .project-code a::after {
+        display:block;
+        content: '';
+        border-bottom: solid 2px #44ceab;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+    }
+    
+    .project-code a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .more-projects {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0%;
+        z-index: 2;
+    }
+    
+    .more-projects .more-p-link {
+        color: #0fc4e4;
+        font-family: monospace;
+        font-size: 24px;
+        text-decoration: none;
+    }
+}
+
+
