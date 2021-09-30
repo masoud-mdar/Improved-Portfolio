@@ -181,6 +181,11 @@ button:focus {
 }
 
 /*                 */
+.planet {
+    display: none;
+}
+
+/*                 */
 
 .tank-wrapper {
     width: 70px;
