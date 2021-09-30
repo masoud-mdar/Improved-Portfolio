@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./home/index.css">
+        <link rel="stylesheet" href="./home/navbar.css">
+        <title>Simple Game Of Portfolio</title>
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div id="nav-bar" class="navbar">
+                <div id="main-nav" class="main-nav">
+                    <a id="home-link" href="#" class="nav-link">Home</a>
+                    <a id="projects-link" href="./projects/projects.html" class="nav-link">Projects</a>
+                    <a id="about-link" href="./about/about.html" class="nav-link">About</a>
+                    <a id="contact-link" href="./contact/contact.html" class="nav-link">Contact</a>
+                </div>
+                <div id="game-nav" class="game-nav">
+                    <div class="game-nav-links">
+                        <button id="home-btn" class="home-btn">Home</button>
+                    </div>
+                    <div class="game-nav-items">
+                        <button id="restart" class="btn">RESTART</button>
+
+                        <div class="score-wrapper">SCORE <span class="score-span"><span id="score" class="progress-span"></span></span></div>
+
+                        <div id="time-div" class="time"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="title-circle"></div>
+
+            <div id="name-part" class="name-part">
+                <div class="cible-wrapper"><div class="cible">M</div></div>
+                <div class="cible-wrapper"><div class="cible">A</div></div>
+                <div class="cible-wrapper"><div class="cible">S</div></div>
+                <div class="cible-wrapper"><div class="cible">O</div></div>
+                <div class="cible-wrapper"><div class="cible">U</div></div>
+                <div class="cible-wrapper"><div class="cible">D</div></div>
+                <div class="cible-wrapper"><div class="cible">.</div></div>
+                
+                <div class="cible-wrapper"><div class="cible">M</div></div>
+                <div class="cible-wrapper"><div class="cible">O</div></div>
+                <div class="cible-wrapper"><div class="cible">H</div></div>
+                <div class="cible-wrapper"><div class="cible">A</div></div>
+                <div class="cible-wrapper"><div class="cible">M</div></div>
+                <div class="cible-wrapper"><div class="cible">M</div></div>
+                <div class="cible-wrapper"><div class="cible">A</div></div>
+                <div class="cible-wrapper"><div class="cible">D</div></div>
+                <div class="cible-wrapper"><div class="cible">I</div></div>
+                <div class="cible-wrapper"><div class="cible">.</div></div>
+                
+                <div class="cible-wrapper"><div class="cible">D</div></div>
+                <div class="cible-wrapper"><div class="cible">A</div></div>
+                <div class="cible-wrapper"><div class="cible">R</div></div>
+                <div class="cible-wrapper"><div class="cible">V</div></div>
+                <div class="cible-wrapper"><div class="cible">I</div></div>
+                <div class="cible-wrapper"><div class="cible">S</div></div>
+                <div class="cible-wrapper"><div class="cible">H</div></div>
+                <div class="cible-wrapper"><div class="cible">V</div></div>
+                <div class="cible-wrapper"><div class="cible">A</div></div>
+                <div class="cible-wrapper"><div class="cible">N</div></div>
+                <div class="cible-wrapper"><div class="cible">D</div></div>
+            </div>
+
+            <div id="main-ufo" class="ufo">
+                <div class="ufo-head">
+                    <div class="alien">
+                        <div class="eye"></div>
+                        <div class="nose"></div>
+                        <div class="eye"></div>
+                    </div>
+                </div>
+                <div class="ufo-body">
+                    <div class="ufo-dot"></div>
+                    <div class="ufo-dot"></div>
+                    <div class="ufo-dot"></div>
+                </div>
+                <div class="ufo-leg"></div>
+            </div>
+
+            <div id="subtitle" class="subtitle">WEB DEVELOPER</div>
+            <div id="star-wrapper" class="star-wrapper"></div>
+            <div id="explanation" class="explanation">
+                <p>Press <span class="highlight">Space</span> to Shoot</p>
+                <p>Move with the <span class="highlight">Arrow</span> Buttons</p>
+                <p>AND</p>
+                <p><span class="highlight">Don't Shoot the Aliens</span></p>
+            </div>
+            <div id="ufo-wrapper" class="ufo-wrapper"></div>
+
+            <canvas id="canvas1"></canvas>
+
+            <div id="gun-wrapper" class="gun-wrapper">
+                <!-- <div id="gun" class="gun"></div> -->
+                <div id="gun" class="tank-wrapper">
+                    <div id="canon" class="tank-canon"></div>
+                    <div class="tank-left"></div>
+                    <div class="tank-body">
+                        <div id="tank-circle" class="tank-circle"></div>
+                    </div>
+                    <div class="tank-right"></div>
+                </div>
+            </div>
+            <div id="main-btn-wrapper" class="main-btn-wrapper">
+                <button id="destroy-btn" class="destroy-anim">Destroy My Name</button>
+            </div>
+            
+        </div>
+        <script src="./functions.js" type="text/javascript"></script>
+        <script src="./logicFunctions.js" type="text/javascript"></script>
+        <script src="./bulletFunctions.js" type="text/javascript"></script>
+        <script src="./ufoFunctions.js" type="text/javascript"></script>
+        <script src="./game.js" type="text/javascript"></script>
+        
+        <script src="./particles.js" type="text/javascript"></script>
+        <script src="./index.js" type="text/javascript"></script>
+
+    </body>
+</html>
