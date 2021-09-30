@@ -1,4 +1,4 @@
-@media only screen and (max-width: 648px) {
+@media only screen and (max-width: 1200px) {
 
     .container {
         overflow: hidden;
@@ -98,3 +98,4 @@
         display: none;
     }
 }
+
