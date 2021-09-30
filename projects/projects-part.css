@@ -509,6 +509,9 @@
     }
 
 /*   Satellite   */
+    .responsive-sat {
+        display: flex;
+    }
 
     .satellite {
         top: -30%;

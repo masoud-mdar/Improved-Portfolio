@@ -655,6 +655,10 @@ button {
     to {opacity: 0;}
 }
 
+.responsive-sat {
+    display: none;
+}
+
 /*    Score    */
 
 .score-board {
