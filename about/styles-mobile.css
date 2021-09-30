@@ -1,0 +1,50 @@
+@media only screen and (max-width: 648px) {
+
+    /********** Navbar ********/
+    .main-nav {
+        justify-content: space-evenly;
+    }
+    
+    .nav-link {
+        width: 12vw;
+        margin: 0 1vw;
+        font-size: 16px;
+        font-family: monospace;
+    }
+
+    /************* Planet **************/
+    .planet{
+        top: 2%;
+        left: auto;
+    }
+    /****************Cloud*************/
+
+    .cloud {
+        top: 5%;
+        left: -45;
+        animation: cloud-mobile 60s infinite ease-out;
+    }
+    @keyframes cloud-mobile {
+        from {left: -45%;}
+        to {left: 120%;}
+    }
+    /**************  Text  ***********/
+
+    .text-part {
+        width: 80vw;
+        justify-content: flex-start;
+    }
+
+    .text-part p {
+        width: 70vw;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 15px;
+    }
+    /*   UFO   */
+
+    .ufo {
+        bottom: 10%;
+        right: 1%;
+    }
+}

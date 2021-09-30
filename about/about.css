@@ -309,21 +309,22 @@ body {
 /*    Text    */
 
 .text-part {
-    width: 50vw;
+    width: 70vw;
     height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .text-part p {
-    width: 30vw;
+    width: 50vw;
     height: 50vh;
-    padding-top: 2vh;
+    padding-top: 5vh;
     text-align: justify;
-    color: #fff;
+    color: #d8e8d5;
     font-size: 18px;
     font-family: sans-serif;
     letter-spacing: 1px;
-    line-height: 21px;
+    line-height: 18px;
 }
