@@ -1,0 +1,656 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: radial-gradient(#232c39, #202733);
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 7vh 5vw 10vh 5vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100vw;
+    height: 7vh;
+    position: absolute;
+    top: 0%;
+    background-color: #4e5e65;
+    box-shadow: 3px 0px 20px #4e5e65;
+    z-index: 1;
+}
+
+.main-nav {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    width: 5vw;
+    height: 7vh;
+    margin: 0 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid transparent;
+    font-size: 18px;
+    color: #d4e4d2;
+    transition: border-bottom-color 300ms ease;
+}
+
+.nav-link:hover {
+    border-bottom-color: #44ceab;
+}
+
+#projects-link {
+    border-bottom-color: #44ceab;
+}
+
+/* Big Circle  */
+
+/*.title-circle {
+    position: absolute;
+    width: 150vw;
+    height: 150vh;
+    top: -110%;
+    background-color: #2c3445;
+    border-radius: 50%;
+    box-shadow: 1px 2px 10px #2c3445;
+}*/
+
+.title-circle {
+    position: absolute;
+    width: 460vh;
+    height: 460vh;
+    top: -418%;
+    background-color: #2c3445;
+    border-radius: 49%;
+    box-shadow: 1px 2px 10px #2c3445;
+}
+
+/*    Stars      */
+
+.star-wrapper {
+    width: 90vw;
+    height: 25vh;
+    position: absolute;
+    top: 10%;
+}
+
+.star {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 5px 5px 50px #fff;
+    animation: star 5s infinite ease-in-out;
+}
+
+@keyframes star {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*     UFO      */
+
+
+.ufo-wrapper {
+    width: 50px;
+    height: 250px;
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.ufo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0%;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.ufo-head {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #44ceab;
+    border-radius: 50% 50% 0 0;
+    border-bottom: none;
+}
+
+.alien {
+    width: 20px;
+    height: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00d539;
+    border: 1px solid #202733;
+    border-radius: 50% 50% 0 0;
+    border-bottom: none;
+}
+
+.eye {
+    width: 2px;
+    height: 3px;
+    background-color: black;
+}
+
+.nose {
+    width: 6px;
+    height: 6px;
+    border: 1px solid transparent;
+    border-bottom-color: black;
+    border-radius: 50%;
+}
+
+.ufo-body {
+    width: 40px;
+    height: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #4e5e65;
+    border-radius: 5px 5px 2px 2px;
+    z-index: 2;
+}
+
+.ufo-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #cedfcd;
+    border-radius: 50%;
+}
+
+.ufo-leg {
+    width: 30px;
+    height: 10px;
+    background-color: #2c3445;
+    border-radius: 0 0 50% 50%;
+    border-top: none;
+    box-shadow: 1px 10px 20px #00d539;
+}
+
+.main-ufo {
+    animation: ufo 5s infinite ease-in-out;
+    transition: top ease;
+}
+@keyframes ufo {
+    0% {
+        top: 0%;
+    }
+    50% {
+        top: 15%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+/* Planet */
+
+.planet{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    animation: planet 120s infinite ease;
+    z-index: 1;
+}
+
+#a{
+    background:#F3AC3C;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    box-shadow: 3px 3px 20px #F3AC3C;
+}
+
+#e,#f,#g{
+    background:#998235;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:70px;
+    left:120px;
+}
+#f{
+    width:20px;
+    height:20px;
+    top:115px;
+    left:140px;
+}
+#g{
+    width:10px;
+    height:10px;
+    top:70px;
+    left:170px;
+}
+
+@keyframes planet {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*    Main Title   */
+
+.main-title {
+    width: 80vw;
+    height: 15vh;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #d4e4d2;
+    letter-spacing: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+
+/*                     */
+.main-btn-wrapper {
+    position: absolute;
+    bottom: 50%;
+}
+
+#game-btn {
+    width: 30vw;
+    height: 7vh;
+    background-color: #4e5e65;
+    border: none;
+    border-radius: 3px;
+    color: #d8e8d5;
+    font-size: 16px;
+    box-shadow: 1px 1px 10px #4e5e65;
+}
+
+.game-btn-anim {
+    animation: destroy-box-shadow 20s infinite;
+}
+
+@keyframes destroy-box-shadow {
+    0% {box-shadow: 1px 1px 10px #4e5e65;}
+    50% {box-shadow: 3px 3px 30px #4e5e65;}
+    100% {box-shadow: 1px 1px 10px #4e5e65;}
+}
+
+/*    Bullet    */
+
+.bullet {
+    width: 3vw;
+    height: 7px;
+    position: absolute;
+    top: auto;
+    left: 0%;
+    background-color: #44ceab;
+    box-shadow: 1px 1px 20px #00d539;
+}
+
+
+/*       cible        */
+
+.cible {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    right: 10%;
+    top: 45%;
+    z-index: 1;
+    /*animation: planet 120s infinite ease;*/
+}
+
+.a{
+    position: relative;
+    width:50px;
+    height:50px;
+    background:#F3AC3C;
+    border-radius:50%;
+    box-shadow: 3px 3px 20px #F3AC3C;
+}
+
+.e,.f,.g{
+    background:#998235;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:17%;
+    left:17%;
+}
+.f{
+    width:10px;
+    height:10px;
+    top:60%;
+    left:35%;
+}
+.g{
+    width:5px;
+    height:5px;
+    top:17%;
+    left:67%;
+}
+
+/***** Game Mode Changes ********/
+
+.btn-up {
+    animation: game-btn-up 3s forwards ease;
+}
+.btn-down {
+    animation: game-btn-down 3s forwards ease;
+}
+
+.circle-down {
+    animation: circle-down 3s forwards ease;
+}
+.circle-up {
+    animation: circle-up 3s forwards ease;
+}
+
+.planet-down {
+    animation: planet-down 3s forwards ease,
+    planet 120s infinite ease;
+}
+.planet-up {
+    animation: planet-up 3s forwards ease,
+    planet 120s infinite ease;
+}
+
+.ufo-in-place {
+    animation: ufo-in-place 5s forwards ease;
+}
+.ufo-back {
+    animation: ufo-back 5s forwards ease;
+}
+
+.ufo-top {
+    animation: ufo-top 3s forwards ease;
+}
+.ufo-down {
+    animation: ufo-down 3s forwards ease;
+}
+
+@keyframes game-btn-up {
+    from {bottom: 50%;}
+    to {bottom: 80%;}
+}
+
+@keyframes game-btn-down {
+    from {bottom: 80%;}
+    to {bottom: 50%;}
+}
+
+@keyframes circle-down {
+    from {top: -418%;}
+    to {top: -378%;}
+}
+
+@keyframes circle-up {
+    from {top: -378%;}
+    to {top: -418%;}
+}
+
+@keyframes planet-down {
+    from {
+        top: 15%;
+        left: 0%;
+    }
+    to {
+        top: 57%;
+        left: -5%;
+    }
+}
+
+@keyframes planet-up {
+    from {
+        top: 57%;
+        left: -5%;
+    }
+    to {
+        top: 15%;
+        left: 0%;
+    }
+}
+
+@keyframes ufo-in-place {
+    from {
+        top: 10%;
+        right: 7%;
+    }
+    to {
+        top: 30%;
+        right: 87%;
+    }
+}
+
+@keyframes ufo-back {
+    from {
+        top: 30%;
+        right: 87%;
+    }
+    to {
+        top: 10%;
+        right: 7%;
+    }
+}
+
+@keyframes ufo-top {
+    from {top: 50%;}
+    to {top: 10%;}
+}
+@keyframes ufo-down {
+    from {top: 10%;}
+    to {top: 50%;}
+}
+
+
+/*   Satellite   */
+
+.satellite {
+    position: relative;
+    top: 30%;
+    width: 90px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*animation: planet 60s infinite ease;*/
+}
+
+.sat-head {
+    width: 8px;
+    height: 5px;
+    background-color: #cedfcd;
+    animation: blink-head 5s infinite ease;
+}
+
+.sat-body {
+    width: 125px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sat-middle {
+    width: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e5e65;
+    border-radius: 25% 25% 0 0;
+}
+
+.sat-label {
+    width: 20px;
+    height: 17px;
+    background-color: #9982359d;
+    border-radius: 3px;
+    box-shadow: 3px 3px 20px #cedfcd;
+    animation: blink-label 5s infinite;
+}
+
+.sat-left, .sat-right {
+    width: 35px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-arm, .right-arm {
+    width: 10px;
+    height: 5px;
+    background-color: #cedfcd;
+}
+
+.left-bat, .right-bat {
+    width: 25px;
+    height: 15px;
+    background-color: #cedfcd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-bat div, .right-bat div {
+    width: 5px;
+    height: 15px;
+    background-color: #4e5e65;
+}
+
+.sat-tail {
+    width: 20px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.part1 {
+    width: 8px;
+    height: 8px;
+    background-color: #cedfcd;
+}
+
+.part2 {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2 .left-half {
+    width: 10px;
+    height: 10px;
+    border-radius: 150px 0 0 0;
+    background-color: #4e5e65;
+}
+
+.part2 .right-half {
+    width: 10px;
+    height: 10px;
+    border-radius: 0 150px 0 0;
+    background-color: #4e5e65;
+}
+
+.part3 {
+    width: 3px;
+    height: 5px;
+    background-color: #cedfcd;
+    border-radius: 0 0 50% 50%;
+}
+
+@keyframes blink-head {
+    0%{background-color: #cedfcd;}
+    50%{background-color: #4e5e65;}
+    100%{background-color: #cedfcd;}
+}
+
+@keyframes blink-label {
+    0%{background-color: #9982359d;}
+    50%{background-color: #998235;}
+    100%{background-color: #9982359d;}
+}
+
+/*   Game Field   */
+
+.game-field {
+    width: 95vw;
+    height: 40vh;
+    position: relative;
+    left: 10%;
+    display: none;
+    z-index: 1;
+}
+
+.moving-cible {
+    position: absolute;
+}
+
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
