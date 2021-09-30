@@ -86,7 +86,7 @@ function spaceButtonHandler () {
                         if (deadCible.style.color !== "transparent") {
     
                             deadCible.style.color = "transparent";
-                            deadCible.style["background-image"] = "url('./XCVT.gif')";
+                            deadCible.style["background-image"] = "url('../home/XCVT.gif')";
                             setTimeout(() => {
                                 deadCible.style["background-image"] = "linear-gradient(#2c3445, #2c3445)";
                             }, 300)
