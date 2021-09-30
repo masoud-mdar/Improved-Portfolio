@@ -376,6 +376,7 @@
     .project-details .project-title h2 {
         color: #d4e4d2;
         font-family: "Bungee Hairline", cursive;
+        text-align: center;
         opacity: 0;
         transition: 1500ms;
     }
@@ -475,6 +476,46 @@
 
 @media only screen and (max-width: 648px) {
 
+    /********** Navbar ********/
+    .main-nav {
+        justify-content: space-evenly;
+    }
+    
+    .nav-link {
+        width: 12vw;
+        margin: 0 1vw;
+        font-size: 16px;
+        font-family: monospace;
+    }
+
+    /****** Button ******/
+    .game-btn-anim {
+        display: none;
+    }
+
+    /* Planet */
+
+    .planet{
+        left: auto;
+        top: 40%;
+    }
+
+    /*     UFO      */
+
+
+    .ufo-wrapper {
+        top: 75%;
+        right: auto;
+    }
+
+/*   Satellite   */
+
+    .satellite {
+        top: -30%;
+        animation: planet 60s infinite ease;
+        z-index: 1;
+    }
+
     #projects {
         width: 100vw;
         height: 235vh;
@@ -507,6 +548,8 @@
         top: 0;
         background-image: url("../public/issue-tracker.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -522,6 +565,8 @@
         top: 0;
         background-image: url("../public/personal-library.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -537,6 +582,8 @@
         top: 0;
         background-image: url("../public/sudoku-solver.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -553,6 +600,8 @@
         top: 0;
         background-image: url("../public/exercise-tracker.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -568,6 +617,8 @@
         top: 0;
         background-image: url("../public/meme-generator.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -583,6 +634,8 @@
         top: 0;
         background-image: url("../public/wikipedia.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -598,6 +651,8 @@
         top: 0;
         background-image: url("../public/weather.jpg");
         background-size: cover;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -613,6 +668,8 @@
         top: 0;
         background-image: url("../public/converter.jpg");
         background-size: cover;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -629,6 +686,8 @@
         top: 0;
         background-image: url("../public/request-header-parser.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -644,6 +703,8 @@
         top: 0;
         background-image: url("../public/url-hasher.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -659,6 +720,8 @@
         top: 0;
         background-image: url("../public/file-metadata.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -674,6 +737,8 @@
         top: 0;
         background-image: url("../public/timestamp.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -689,6 +754,8 @@
         top: 0;
         background-image: url("../public/random-quote.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -704,6 +771,8 @@
         top: 0;
         background-image: url("../public/markdown-previewer.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -719,6 +788,8 @@
         top: 0;
         background-image: url("../public/virtual-drum-machine.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -734,6 +805,8 @@
         top: 0;
         background-image: url("../public/25-5-clock.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -749,6 +822,8 @@
         top: 0;
         background-image: url("../public/calculator.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -764,6 +839,8 @@
         top: 0;
         background-image: url("../public/random-color.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -779,6 +856,8 @@
         top: 0;
         background-image: url("../public/key-code.jpg");
         background-size: 100% 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 30px #0fc4e4;
         transition: 500ms;
     }
     
@@ -809,6 +888,8 @@
     .project-details .project-title h2 {
         color: #d4e4d2;
         font-family: "Bungee Hairline", cursive;
+        font-size: 12px;
+        text-align: center;
         opacity: 0;
         transition: 1500ms;
     }
@@ -837,7 +918,7 @@
     
     .project-details .project-skills {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-content: space-around;
         color: #d4e4d2;
@@ -845,9 +926,12 @@
     }
     
     .project-details .project-skills p {
-        padding: 6px;
-        margin: 5px;
-        border: 2px solid #d4e4d2;
+        padding: 3px;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #d4e4d2;
         border-radius: 5px;
         opacity: 0;
         transition: 1500ms;
